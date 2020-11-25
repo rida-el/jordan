@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan</title>
+</head>
+<body>
+     
+    <section>
+        <div class="circle" ></div>
+        <header>
+            <a href="#" ><img class="logo" src="logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+               <h2>It's not just shose <br> It's <span>Jordan</span></h2> 
+               <p>
+                Paris rejoint la famille Jordan Wings.
+                Le programme Jordan Wings veut changer les règles du jeu, inspirer et transformer
+                le quotidien des jeunes parisiens les moins favorisés à travers l’éducation et le mentorat.
+               </p>
+               <a href="#">Learng More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img.png" class="jordan">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="logo.png" onclick="imgSlider('nikee.png');changeColor('rgb(122, 44, 44)') "></li>
+            <li><img src="dior.png" onclick="imgSlider('d.png');changeColor('rgb(109, 181, 214)')"></li>
+            <li><img src="off.png" onclick="imgSlider('img.png');changeColor('rgb(241, 60, 60)')"></li>
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href=""><img src="twitter.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="insta.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="git.png" alt=""></a>
+            </li>
+        </ul>
+
+    </section>
+
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.jordan').src = anything;
+
+    }
+    function changeColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script>
+
+
+    
+</body>
+</html>
